@@ -12,8 +12,8 @@ export default (
   { name, count = 1, onInc = () => undefined, onDec = () => {} }: Props, // tslint:disable-line
 ) => (
   <View style={styles.root}>
-    <Text>
-      Counter {name}: {count}
+    <Text style={{color: 'red'}}>
+      Counter111hhh {name}: {count}
     </Text>
     <View>
       <Button title="+" onPress={onInc} />

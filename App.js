@@ -1,14 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import Counter from './lib/src/components/Counter';
 
-export default () => (
-  <View style={styles.container}>
-    <Text style={styles.welcome}>Welcome to React Native!</Text>
-    <Counter name="counter1" count={10} />
-  </View>
-);
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Counter name="counter1" count={10} />
+      </View>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   container: {

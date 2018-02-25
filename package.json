@@ -5,6 +5,8 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "tsc": "tsc",
+    "tsc-watch": "tsc --watch",
     "test": "jest"
   },
   "dependencies": {
@@ -27,21 +29,13 @@
   },
   "jest": {
     "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
+    "moduleFileExtensions": ["ts", "tsx", "js"],
     "transform": {
       "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
       "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "testPathIgnorePatterns": [
-      "\\.snap$",
-      "<rootDir>/node_modules/",
-      "<rootDir>/lib/"
-    ],
+    "testPathIgnorePatterns": ["\\.snap$", "<rootDir>/node_modules/", "<rootDir>/lib/"],
     "cacheDirectory": ".jest/cache"
   }
 }
