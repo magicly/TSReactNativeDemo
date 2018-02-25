@@ -16,6 +16,16 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
+"@types/react-native@^0.52.13":
+  version "0.52.13"
+  resolved "http://registry.npm.taobao.org/@types/react-native/download/@types/react-native-0.52.13.tgz#251289b6c995c738f6f94def742308cf7b47f79b"
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^16.0.38":
+  version "16.0.38"
+  resolved "http://registry.npm.taobao.org/@types/react/download/@types/react-16.0.38.tgz#76617433ea10274505f60bb86eddfdd0476ffdc2"
+
 abab@^1.0.4:
   version "1.0.4"
   resolved "http://registry.npm.taobao.org/abab/download/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e"
@@ -4400,6 +4410,10 @@ type-is@~1.6.6:
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "http://registry.npm.taobao.org/typedarray/download/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
+
+typescript@^2.7.2:
+  version "2.7.2"
+  resolved "http://registry.npm.taobao.org/typescript/download/typescript-2.7.2.tgz#2d615a1ef4aee4f574425cdff7026edf81919836"
 
 ua-parser-js@^0.7.9:
   version "0.7.17"
