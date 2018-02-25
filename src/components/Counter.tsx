@@ -8,37 +8,39 @@ interface Props {
   onDec?: () => void;
 }
 
-export default ({ name, count = 1,onInc, onDec }: Props) => (
+export default (
+  { name, count = 1, onInc = () => undefined, onDec = () => {} }: Props, // tslint:disable-line
+) => (
   <View style={styles.root}>
     <Text>
       Counter {name}: {count}
     </Text>
     <View>
-      <Button title="+" onPress={onInc || (() => {})} />
-      <Button title="-" onPress={onDec || (() => {})} />
+      <Button title="+" onPress={onInc} />
+      <Button title="-" onPress={onDec} />
     </View>
   </View>
 );
 
 // styles
 const styles = StyleSheet.create({
-  root: {
-    alignItems: 'center',
-    alignSelf: 'center',
-  },
-  buttons: {
-    flexDirection: 'row',
-    minHeight: 70,
-    alignItems: 'stretch',
-    alignSelf: 'center',
-    borderWidth: 5,
-  },
   button: {
     flex: 1,
     paddingVertical: 0,
   },
+  buttons: {
+    alignItems: 'stretch',
+    alignSelf: 'center',
+    borderWidth: 5,
+    flexDirection: 'row',
+    minHeight: 70,
+  },
   greeting: {
     color: '#999',
     fontWeight: 'bold',
+  },
+  root: {
+    alignItems: 'center',
+    alignSelf: 'center',
   },
 });
